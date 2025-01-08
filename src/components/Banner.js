@@ -75,15 +75,26 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    I'm a passionate web developer with a background in computer
+                    I'm a passionate web developer with a bachelor's in computer
                     science and certifications in UX/UI design and project
                     management. I specialize in creating responsive,
                     user-friendly web applications using React, JavaScript, and
-                    Node.js. I love solving problems, improving performance, and
-                    delivering intuitive designs that meet user needs.
+                    Node.js. I love solving problems and delivering intuitive
+                    designs that meet user needs. When I'm not at my computer I
+                    enjoy powerlifting, doing Muay Thai, watching NFL and
+                    Formula 1, and playing my PS5!
                   </p>
-                  <button onClick={() => console.log("connect")}>
-                    Let’s Connect <ArrowRightCircle size={25} />
+                  <button
+                    onClick={() => {
+                      const link = document.createElement("a");
+                      link.href = process.env.PUBLIC_URL + "/MyDeveloperCV.pdf"; // Ensure correct path
+                      link.download = "MyDeveloperCV.pdf";
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                    }}
+                  >
+                    Download my CV <ArrowRightCircle size={25} />
                   </button>
                 </div>
               )}

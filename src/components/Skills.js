@@ -1,6 +1,17 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import js from "../assets/img/js.png";
+import html from "../assets/img/html.png";
+import css from "../assets/img/css.png";
+import react from "../assets/img/react.png";
+import bootstrap from "../assets/img/bootstrap.png";
+import python from "../assets/img/python.png";
+import node from "../assets/img/node.png";
+import sql from "../assets/img/sql.png";
+import php from "../assets/img/php.png";
+import mongo from "../assets/img/mongo.png";
+import wp from "../assets/img/wp.png";
+import figma from "../assets/img/figma.png";
+import git from "../assets/img/git.png";
+
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -47,20 +58,56 @@ export const Skills = () => {
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Web Development</h5>
+                  <img src={js} alt="Image" />
+                  <h5>Javascript</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image" />
-                  <h5>Div Centering</h5>
+                  <img src={html} alt="Image" />
+                  <h5>HTML</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="Image" />
+                  <img src={css} alt="Image" />
+                  <h5>CSS</h5>
+                </div>
+                <div className="item">
+                  <img src={react} alt="Image" />
                   <h5>React</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Logo Design</h5>
+                  <img src={bootstrap} alt="Image" />
+                  <h5>Bootstrap</h5>
+                </div>
+                <div className="item">
+                  <img src={python} alt="Image" />
+                  <h5>Python</h5>
+                </div>
+                <div className="item">
+                  <img src={node} alt="Image" />
+                  <h5>Node.JS</h5>
+                </div>
+                <div className="item">
+                  <img src={sql} alt="Image" />
+                  <h5>SQL</h5>
+                </div>
+                <div className="item">
+                  <img src={php} alt="Image" />
+                  <h5>PHP</h5>
+                </div>
+                <div className="item">
+                  <img src={mongo} alt="Image" />
+                  <h5>MongoDB</h5>
+                </div>
+                <div className="item">
+                  <img src={git} alt="Image" />
+                  <h5>Git</h5>
+                </div>
+                <div className="item">
+                  <img src={figma} alt="Image" />
+                  <h5>Figma</h5>
+                </div>
+                <div className="item">
+                  <img src={wp} alt="Image" />
+                  <h5>WordPress</h5>
                 </div>
               </Carousel>
             </div>
