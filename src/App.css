@@ -272,7 +272,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+  margin-bottom: 40px;
+  min-height: 3em;
 }
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 55px;
+  }
+}
+
 .banner p {
   color: #b8b8b8;
   font-size: 18px;
