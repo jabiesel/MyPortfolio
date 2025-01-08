@@ -46,7 +46,7 @@ export const Projects = () => {
       url: "https://github.com/jabiesel/Rock-Paper-Scissors",
     },
     {
-      title: "To-Do App",
+      title: "To-Do List",
       description: "Javascript & PHP app",
       imgUrl: ToDo,
       url: "https://github.com/jabiesel/todo-app-ver-2",
