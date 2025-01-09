@@ -58,55 +58,55 @@ export const Skills = () => {
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
-                  <img src={js} alt="Image" />
+                  <img src={js} alt="js" />
                   <h5>Javascript</h5>
                 </div>
                 <div className="item">
-                  <img src={html} alt="Image" />
+                  <img src={html} alt="html" />
                   <h5>HTML</h5>
                 </div>
                 <div className="item">
-                  <img src={css} alt="Image" />
+                  <img src={css} alt="css" />
                   <h5>CSS</h5>
                 </div>
                 <div className="item">
-                  <img src={react} alt="Image" />
+                  <img src={react} alt="react" />
                   <h5>React</h5>
                 </div>
                 <div className="item">
-                  <img src={bootstrap} alt="Image" />
+                  <img src={bootstrap} alt="bootstrap" />
                   <h5>Bootstrap</h5>
                 </div>
                 <div className="item">
-                  <img src={python} alt="Image" />
+                  <img src={python} alt="python" />
                   <h5>Python</h5>
                 </div>
                 <div className="item">
-                  <img src={node} alt="Image" />
+                  <img src={node} alt="node" />
                   <h5>Node.JS</h5>
                 </div>
                 <div className="item">
-                  <img src={sql} alt="Image" />
+                  <img src={sql} alt="sql" />
                   <h5>SQL</h5>
                 </div>
                 <div className="item">
-                  <img src={php} alt="Image" />
+                  <img src={php} alt="php" />
                   <h5>PHP</h5>
                 </div>
                 <div className="item">
-                  <img src={mongo} alt="Image" />
+                  <img src={mongo} alt="mongodb" />
                   <h5>MongoDB</h5>
                 </div>
                 <div className="item">
-                  <img src={git} alt="Image" />
+                  <img src={git} alt="git" />
                   <h5>Git</h5>
                 </div>
                 <div className="item">
-                  <img src={figma} alt="Image" />
+                  <img src={figma} alt="figma" />
                   <h5>Figma</h5>
                 </div>
                 <div className="item">
-                  <img src={wp} alt="Image" />
+                  <img src={wp} alt="wordpress" />
                   <h5>WordPress</h5>
                 </div>
               </Carousel>
@@ -114,7 +114,11 @@ export const Skills = () => {
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
+      <img
+        className="background-image-left"
+        src={colorSharp}
+        alt="background"
+      />
     </section>
   );
 };

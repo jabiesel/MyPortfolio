@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import emailjs from "emailjs-com";
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -10,6 +11,7 @@ export const Contact = () => {
     email: "",
     message: "",
   };
+
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Send");
   const [status, setStatus] = useState({});
@@ -21,27 +23,37 @@ export const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:3000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText("Send");
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code == 200) {
-      setStatus({ succes: true, message: "Message sent successfully" });
-    } else {
-      setStatus({
-        succes: false,
-        message: "Something went wrong, please try again later.",
-      });
-    }
+
+    emailjs
+      .send(
+        "service_ep8b5ls", //  Service ID
+        "template_q9uz9xa", //  Template ID
+        {
+          name: formDetails.firstName,
+          email: formDetails.email,
+          message: formDetails.message,
+        },
+        "4Cy93CXxHlpgSoDeX" //  Public Key
+      )
+      .then(
+        (result) => {
+          console.log("Email sent successfully!", result.text);
+          setStatus({ success: true, message: "Message sent!" });
+          setButtonText("Send");
+          setFormDetails(formInitialDetails);
+        },
+        (error) => {
+          console.error("Error sending email:", error.text);
+          setStatus({
+            success: false,
+            message: "Something went wrong, please try again later.",
+          });
+          setButtonText("Send");
+        }
+      );
   };
 
   return (
@@ -70,7 +82,7 @@ export const Contact = () => {
                   }
                 >
                   <h2>Let's Get In Touch</h2>
-                  <h5>Send me an Email at joshbiesel@gmail.com</h5>
+                  <h5>Email me at joshbiesel@gmail.com</h5>
                   <form onSubmit={handleSubmit}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">
@@ -109,11 +121,11 @@ export const Contact = () => {
                       {status.message && (
                         <Col>
                           <p
-                            className={
-                              status.success === false ? "danger" : "success"
-                            }
+                            className={`status-message ${
+                              status.success ? "success" : "error"
+                            }`}
                           >
-                            {status.message}
+                            {status.success ? "✓ " : "✗ "} {status.message}
                           </p>
                         </Col>
                       )}
