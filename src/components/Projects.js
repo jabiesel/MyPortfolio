@@ -9,12 +9,19 @@ import ToDo from "../assets/img/Todo 1.png";
 import RPS from "../assets/img/RPS.png";
 import ColorGen from "../assets/img/ColorGen.png";
 import Clock from "../assets/img/Clock.png";
+import Leader from "../assets/img/LeaderboardApp.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
   const projects = [
+    {
+      title: "Leaderboard Mobile App",
+      description: "React Native app",
+      imgUrl: Leader,
+      url: "https://github.com/jabiesel/LeaderboardApp",
+    },
     {
       title: "Barker",
       description: "A Twitter/Messenger Clone",
