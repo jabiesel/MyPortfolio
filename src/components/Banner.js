@@ -87,8 +87,9 @@ export const Banner = () => {
                   <button
                     onClick={() => {
                       const link = document.createElement("a");
-                      link.href = process.env.PUBLIC_URL + "/MyDeveloperCV.pdf";
-                      link.download = "MyDeveloperCV.pdf";
+                      link.href =
+                        process.env.PUBLIC_URL + "/Josh Biesel_CV.pdf";
+                      link.download = "Josh Biesel_CV.pdf";
                       document.body.appendChild(link);
                       link.click();
                       document.body.removeChild(link);
