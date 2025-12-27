@@ -13,15 +13,17 @@ import Leader from "../assets/img/LeaderboardApp.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import VLS from "../assets/img/VLS.png";
 
 export const Projects = () => {
   const projects = [
     {
-      title: "Leaderboard Mobile App",
-      description: "React Native app",
-      imgUrl: Leader,
-      url: "https://github.com/jabiesel/LeaderboardApp",
+      title: "Lash Studio",
+      description: "A website for an eyelash extension studio",
+      imgUrl: VLS,
+      url: "https://vatine-lash-studio.netlify.app/en/",
     },
+
     {
       title: "Barker",
       description: "A Twitter/Messenger Clone",
@@ -41,16 +43,22 @@ export const Projects = () => {
       url: "https://jabiesel.github.io/Quiz-App/",
     },
     {
-      title: "Calculator",
-      description: "Javascript app",
-      imgUrl: Calculator,
-      url: "https://github.com/jabiesel/Calculator.git",
+      title: "Leaderboard Mobile App",
+      description: "React Native app",
+      imgUrl: Leader,
+      url: "https://github.com/jabiesel/LeaderboardApp",
     },
     {
       title: "Rock, Paper, Scissors",
       description: "Javascript app",
       imgUrl: RPS,
       url: "https://github.com/jabiesel/Rock-Paper-Scissors",
+    },
+    {
+      title: "Calculator",
+      description: "Javascript app",
+      imgUrl: Calculator,
+      url: "https://github.com/jabiesel/Calculator.git",
     },
     {
       title: "To-Do List",
