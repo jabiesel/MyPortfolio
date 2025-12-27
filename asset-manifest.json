@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MyPortfolio/static/css/main.8b5698b3.css",
-    "main.js": "/MyPortfolio/static/js/main.c1d9c560.js",
+    "main.js": "/MyPortfolio/static/js/main.d0502596.js",
     "static/js/488.3c2103eb.chunk.js": "/MyPortfolio/static/js/488.3c2103eb.chunk.js",
     "static/media/color-sharp.png": "/MyPortfolio/static/media/color-sharp.df48ac2935d3feecc292.png",
     "static/media/color-sharp2.png": "/MyPortfolio/static/media/color-sharp2.6ac460998d2f8287f4cc.png",
@@ -16,6 +16,7 @@
     "static/media/CentraNo2-Medium.ttf": "/MyPortfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/MyPortfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
     "static/media/CalculatorApp.png": "/MyPortfolio/static/media/CalculatorApp.b0e2c54dcfa67447c2db.png",
+    "static/media/VLS.png": "/MyPortfolio/static/media/VLS.a14e119b29d525ae71d0.png",
     "static/media/contact-img.svg": "/MyPortfolio/static/media/contact-img.f26ac2a70f0588bd6f3992d5db0129e7.svg",
     "static/media/RPS.png": "/MyPortfolio/static/media/RPS.bf0ca4e2c64de9a6a0d2.png",
     "static/media/wp.png": "/MyPortfolio/static/media/wp.e4fb81c2428792ae073b.png",
@@ -42,11 +43,11 @@
     "static/media/nav-icon1.svg": "/MyPortfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "/MyPortfolio/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
     "main.8b5698b3.css.map": "/MyPortfolio/static/css/main.8b5698b3.css.map",
-    "main.c1d9c560.js.map": "/MyPortfolio/static/js/main.c1d9c560.js.map",
+    "main.d0502596.js.map": "/MyPortfolio/static/js/main.d0502596.js.map",
     "488.3c2103eb.chunk.js.map": "/MyPortfolio/static/js/488.3c2103eb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8b5698b3.css",
-    "static/js/main.c1d9c560.js"
+    "static/js/main.d0502596.js"
   ]
 }
